@@ -9,11 +9,10 @@ while NFT transactions are managed by smart contracts."
 
 ### **Tools:** 
 Spring boot, Solidity ,Micro Services , Angular , Ether.js , Hardhat, Devops : CI/CD,
-Jenkens, Doker, Github, Mongodb, MetaMask.
+Jenkens, Doker, Github, Mongodb, MetaMask
+**Before starting, here is the process to follow during this project:**
 
-### **Before starting, here is the process to follow during this project: **
-
-### ** A. Develop the necessary microservices **
+### ** A. Develop the necessary microservices**
 ### **B. Write a Smart Contract with Solidity**
 ### **C. Test the Contract**
 ### **D. Deploy the Contract to the blockchain using Hardhat**
