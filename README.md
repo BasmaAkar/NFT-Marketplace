@@ -12,7 +12,7 @@ Spring boot, Solidity ,Micro Services , Angular , Ether.js , Hardhat, Devops : C
 Jenkens, Doker, Github, Mongodb, MetaMask
 **Before starting, here is the process to follow during this project:**
 
-### ** A. Develop the necessary microservices**
+### **A. Develop the necessary microservices**
 ### **B. Write a Smart Contract with Solidity**
 ### **C. Test the Contract**
 ### **D. Deploy the Contract to the blockchain using Hardhat**
