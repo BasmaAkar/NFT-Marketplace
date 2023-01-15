@@ -17,8 +17,8 @@ Jenkens, Doker, Github, Mongodb, MetaMask
 ### **C. Test the Contract**
 ### **D. Deploy the Contract to the blockchain using Hardhat**
 ### **E. Create Front end with Angular**
-### **F. Connect MetaMask with Angular"
-### **G. Connect Front end with Smart Contract using Ether.js"
+### **F. Connect MetaMask with Angular**
+### **G. Connect Front end with Smart Contract using Ether.js**
 
 ![image](https://user-images.githubusercontent.com/101791324/212566577-a2bf96ad-3df4-4525-840c-d0afe017ff80.png)
 
