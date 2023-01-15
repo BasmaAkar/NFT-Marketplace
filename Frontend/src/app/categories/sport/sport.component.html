@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- swiperjs cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    <!-- google font link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- home section starts -->
+    <section id="home" class="spacetop15 spacebottom10">
+        <div class="container">
+            <div class="row jc-between ai-center col-reverse-s">
+                <div class="col5 col6-md col12-s ta-center-s">
+                    <h1 class="size2 bold spacebottom1">
+                        Create, Sell & Collect Your Own Creative NFT
+                    </h1>
+
+                    <div class="row col8 col9-md jc-between spacebottom4 jc-evenly-s col12-s">
+                        <a href="/create-nft" class="btn bg-purple size2 white ">Create your collection now</a>
+                        <a href="/show-nft" class="btn bg-white10 size2 white ">Sell NFT</a>
+                    </div>
+                </div>
+                <div class="col6 col12-s spacebottom3-s">
+                    <img src="assets/heroimage.png" alt="" class="img-responsive float">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- collections section starts -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="row box-card jc-evenly-md" *ngFor="let nft of nfts">
+                <div *ngIf="nft.cat == 'Sport' ">
+                    <div class="col4 card collect bg-white10 col5-md col6-s">
+                        <div class="row jc-between spacetop2">
+                            <div>
+                                <img src="assets/monkey.jpg" class="img-responsive">
+                                <h6 class="size2 bold">Name: {{ nft.nom_nft }}</h6>
+                                <br>
+                                <p class="size2 bold"> {{ nft.description }} eth </p>
+                                <br>
+                                <h6 class="size2 bold">Price: {{ nft.prix }} eth </h6>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <a href="/panier" class="bid size2 ta-center">
+                            Add to card
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- collections section ends -->
+</body>
+
+</html>

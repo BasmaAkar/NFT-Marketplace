@@ -1,0 +1,47 @@
+<div>
+    <div class="col-md-6 offset-md-3">
+        <h3> Create new NFT </h3>
+        <form (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+                <label>Numero</label>
+                <input type="number" class="form-control" id="id_nft" [(ngModel)]="nft.id_nft" name="id_nft">
+            </div>
+
+            <div class="form-group">
+                <label>Nom</label>
+                <input type="text" class="form-control" id="nom_nft" [(ngModel)]="nft.nom_nft" name="nom_nft">
+            </div>
+
+            <div class="form-group">
+                <label>Prix</label>
+                <input type="text" class="form-control" id="prix" [(ngModel)]="nft.prix" name="prix">
+            </div>
+
+            <div class="form-group">
+                <label>description</label>
+                <input type="text" class="form-control" id="description" [(ngModel)]="nft.description"
+                    name="description">
+            </div>
+
+            <div class="form-group">
+                <label>Categorie </label>
+                <select name="cat" id="cat" class="form-control" [(ngModel)]="nft.cat">
+                    <option class="form-control">--Please choose the category--</option>
+                    <option class="form-control">Animals</option>
+                    <option class="form-control">Arts</option>
+                    <option class="form-control">Sport</option>
+                    <option class="form-control">Vehicles</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label>Nft</label>
+                <input type="file" class="form-control" id="image" [(ngModel)]="nft.image" name="image" />
+            </div>
+
+            <button class="btn btn-dark" type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>

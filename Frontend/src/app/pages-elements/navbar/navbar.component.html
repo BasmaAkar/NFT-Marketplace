@@ -1,0 +1,122 @@
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">NFT Market</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+      aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExample04">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Market </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ContactUs">ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/create-nft">Build NFT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/panier">Panier</a>
+        </li>
+  
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle " id="navbarScrollingDropdown" role="button"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown07">
+  
+            <a ngbDropdownItem class="dropdown-item" routerLink="/sport">Sport</a>
+            <a ngbDropdownItem class="dropdown-item" routerLink="/artistic">Artistic</a>
+            <a ngbDropdownItem class="dropdown-item" routerLink="/nature">Nature</a>
+            <a ngbDropdownItem class="dropdown-item" routerLink="/animals">Animals</a>
+            <a ngbDropdownItem class="dropdown-item" routerLink="/vehicles"><Var>Vehicles</Var></a>
+  
+          </div>
+        </li>
+        <li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <li class="bi bi-box-arrow-right">
+          <a 
+          *ngIf="!walletConnected" href="#" class="nav-link  navbar-right mr-4" aria-expanded="true" (click)="connectToWallet()">
+          Connect Wallet</a>
+        </li>
+      </ul>
+  
+    </div>
+  </nav>
+  
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg main-nav px-0">
+        <div class="collapse navbar-collapse" id="mainMenu">
+         
+          <ul class="navbar-nav ml-auto text-uppercase f1">
+            <li> 
+              <a class="navbar-brand" href="/mojo"><img class="logo" src="assets/monkey.png"></a>
+            </li>
+            <li>
+              <a  routerLink="/show-nft">Market </a>
+            </li>
+            <li ngbDropdown class="nav-item dropdown">
+              <a ngbDropdownToggle id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+              <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown07">
+                <a ngbDropdownItem class="dropdown-item" routerLink="/sport">Sport</a>
+                <a ngbDropdownItem class="dropdown-item" routerLink="/artistic">Arts</a>
+                <a ngbDropdownItem class="dropdown-item" routerLink="/nature">Nature</a>
+                <a ngbDropdownItem class="dropdown-item" routerLink="/animals">Animals</a>
+                <a ngbDropdownItem class="dropdown-item" routerLink="/vehicles">Vehicles</a>
+      
+              </div>
+            </li>
+            <li>
+              <a  routerLink="/ContactUs">ContactUs</a>
+            </li>
+            <li>
+              <a  routerLink="/aboutUs">AboutUs</a>
+            </li>
+            <li>
+              <a *ngIf="!walletConnected" routerLink="/wallet" (click)="connectToWallet()">Build NFT</a>
+              <a *ngIf="walletConnected" routerLink="/create-nft">Build NFT</a>
+            </li>
+            <li>
+              <a  routerLink="/panier">Panier</a>
+            </li>
+            <li>
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-right" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            <li>
+              <a *ngIf="!walletConnected" aria-expanded="true" (click)="connectToWallet()">
+                 Connect Wallet
+              </a>
+            </li>
+            <li>
+            <div *ngIf="walletConnected" style="color: aliceblue;">
+              <h4  *ngIf="walletConnected">Connected</h4>
+              <!-- <label class="text-black">{{walletId}}</label> -->
+            </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <body style="margin-top: 10%;">
+
+ </body>

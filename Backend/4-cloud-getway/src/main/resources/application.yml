@@ -1,0 +1,33 @@
+server:
+  port: 9191
+
+spring:
+  application:
+    name: API-GATWAY
+  cloud:
+    gateway:
+      routes:
+      - id: NFT-SERVICE
+        uri: lb://NFT-SERVICE
+        predicates:
+        - Path=/nft/**
+      - id: CATEGORIE-SERVICE 
+        uri: lb://CATEGORIE-SERVICE 
+        predicates:
+        - Path=/cat/** 
+      - id: PANIER-SERVICE 
+        uri: lb://PANIER-SERVICE 
+        predicates:
+        - Path=/panier/**          
+
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+   

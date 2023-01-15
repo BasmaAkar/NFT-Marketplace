@@ -1,0 +1,8 @@
+img {
+    margin-left: 42%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: metalogo;
+    animation-duration: 4s;
+  }
