@@ -7,7 +7,7 @@ Users will authenticate through an Ethereum wallet and will be able to buy and s
 The marketplace must be based on a hybrid architecture with a MongoDB NoSQL database to store general information
 while NFT transactions are managed by smart contracts."
 
-###Tools: 
+### **Tools:** 
 Spring boot, Solidity ,Micro Services , Angular , Ether.js , Hardhat, Devops : CI/CD,
 Jenkens, Doker, Github, Mongodb, MetaMask.
 ![image](https://user-images.githubusercontent.com/101791324/212566577-a2bf96ad-3df4-4525-840c-d0afe017ff80.png)
